@@ -1,4 +1,4 @@
-print("name:megaraj.up\n usn:1AY24AI069\n section:o")
+print("name:monalisa.n\n usn:1AY24AI073\n section:o")
 grid = [
     ['.', '.', '.', '.', '.', '.'],
     ['.', 'O', 'O', '.', '.', '.'],

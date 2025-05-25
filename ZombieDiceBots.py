@@ -1,4 +1,4 @@
-print("name : monalisa.n \n usn : 1AY24AI073 \n section : O O")
+print("name : monalisa.n \n usn : 1AY24AI073 \n section : O")
 
 import random
 

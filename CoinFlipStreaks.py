@@ -1,4 +1,4 @@
-print("monalisa.n, USN: 1AY24AI073, SEC: O")
+print("monalisa.n\n USN: 1AY24AI073\n SEC: O")
 import random
 NUMBER_OF_EXPERIMENTS = 10000
 FLIPS_PER_EXPERIMENT = 100

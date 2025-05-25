@@ -1,6 +1,5 @@
+print("monalisa.n\n USN: 1AY24AI073\n SEC: O")
 import random
-
-print("monalisa.n, USN: 1AY24AI073, SEC: O")
 num = int(input("Enter a number between 1 to 9: "))
 
 while num < 1 or num > 9:

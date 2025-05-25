@@ -1,4 +1,4 @@
-print("monalisa.n\n USN: 1AY24AI073\n SEC: O")
+print("monalisa.n \n USN: 1AY24AI073\n SEC: O")
 import random
 NUMBER_OF_EXPERIMENTS = 10000
 FLIPS_PER_EXPERIMENT = 100
@@ -16,4 +16,13 @@ def has_streak(coin_flips, streak_length):
     return False
 
 def simulate():
-    streaks_found
+    streaks_found = 0
+    for _ in range(NUMBER_OF_EXPERIMENTS):
+        flips = ['H' if random.randint(0, 1) == 1 else 'T' for _ in range(FLIPS_PER_EXPERIMENT)]
+        if has_streak(flips, STREAK_LENGTH):
+            streaks_found += 1
+    
+    percentage = (streaks_found / NUMBER_OF_EXPERIMENTS) * 100
+    print(f'Chance of streak: {percentage:.2f}%')
+
+simulate()

@@ -1,24 +1,19 @@
-print("name : monalisa.n\n usn : 1AY24AI073 \n section : O ")
-
+print("monalisa.n, USN: 1AY24AI073, SEC: O")
 import random
+NUMBER_OF_EXPERIMENTS = 10000
+FLIPS_PER_EXPERIMENT = 100
+STREAK_LENGTH = 6
 
-def flip_coins(num_flips=100):
-    return [random.choice(['H', 'T']) for _ in range(num_flips)]
-
-def count_streaks(coin_flips, streak_length=6):
-    streaks = 0
-    current_streak = 1
-
+def has_streak(coin_flips, streak_length):
+    count = 1
     for i in range(1, len(coin_flips)):
         if coin_flips[i] == coin_flips[i - 1]:
-            current_streak += 1
-            if current_streak == streak_length:
-                streaks += 1
+            count += 1
+            if count == streak_length:
+                return True
         else:
-            current_streak = 1
-    return streaks
+            count = 1
+    return False
 
-# Run simulation
-flips = flip_coins()
-print('Flips:', ''.join(flips))
-print('Number of 6-in-a-row streaks:', count_streaks(flips))
+def simulate():
+    streaks_found
